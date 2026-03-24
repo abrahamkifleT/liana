@@ -1,0 +1,542 @@
+/* =============================================
+   LIANA BUSINESS – Pricing Page Styles (Dark Theme)
+   ============================================= */
+
+/* ---------- CSS Variables (Imported from Business) ---------- */
+:root {
+  --color-black: #000000;
+  --color-dark: #0d0d0d;
+  --color-dark-card: #141414;
+  --color-dark-card2: #1c1c1c;
+  --color-blue: #00c3ff;
+  --color-blue-dark: #0099ff;
+  --color-white: #ffffff;
+  --color-text: rgba(255, 255, 255, 0.9);
+  --color-text-muted: rgba(255, 255, 255, 0.55);
+  --font-main: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --radius-card: 20px;
+  --radius-sm: 8px;
+  --transition: all 0.3s ease;
+  --section-py: 100px;
+}
+
+/* ---------- Theme Base Overrides ---------- */
+body.prices-page {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+}
+
+body.prices-page .scroll-top {
+  background: var(--color-blue);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 195, 255, 0.4);
+}
+
+/* Header Consistency */
+body.prices-page .header__area.sticky {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+body.prices-page .header__menu ul li a {
+  color: var(--color-text-muted);
+  text-decoration: none !important;
+}
+
+body.prices-page .header__menu ul li a:hover,
+body.prices-page .header__menu ul li a.active {
+  color: var(--color-blue) !important;
+  text-decoration: none !important;
+}
+
+body.prices-page .header__logo a {
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+body.prices-page .logo-divider {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 6px !important;
+  margin-right: 2px !important;
+}
+
+body.prices-page .logo-business {
+  color: var(--color-blue);
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 4px !important;
+}
+
+.menu__open {
+  display: none;
+  font-size: 24px;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.menu__open:hover {
+  color: var(--color-blue);
+}
+
+/* Offcanvas Section */
+.offcanvas__area {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 320px;
+  height: 100vh;
+  background: var(--color-dark);
+  z-index: 1050;
+  transition: all 0.4s ease;
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.offcanvas__area.active {
+  right: 0;
+}
+
+.offcanvas__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.menu__close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.offcanvas__main {
+  padding: 32px 28px;
+}
+
+.offcanvas__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.offcanvas__menu ul li a {
+  display: block;
+  padding: 14px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.offcanvas__menu ul li a:hover {
+  color: var(--color-blue);
+  padding-left: 6px;
+}
+
+.offcanvas__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  backdrop-filter: blur(4px);
+}
+
+.offcanvas__overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.prices-page .menu__open {
+  color: var(--color-white);
+}
+
+/* Offcanvas Consistency */
+body.prices-page .offcanvas__area {
+  background: var(--color-dark);
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+}
+body.prices-page .menu__close {
+  color: var(--color-white);
+}
+body.prices-page .offcanvas__menu ul li a {
+  color: var(--color-white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* ============================================================
+   PRICING HERO
+   ============================================================ */
+.prices-hero__area {
+  position: relative;
+  padding: 180px 0 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.prices-hero__glow {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(100px);
+}
+
+.prices-hero__glow--left {
+  background: radial-gradient(circle, rgba(0, 195, 255, 0.15) 0%, transparent 70%);
+  top: -100px;
+  left: -200px;
+}
+
+.prices-hero__glow--right {
+  background: radial-gradient(circle, rgba(0, 195, 255, 0.1) 0%, transparent 70%);
+  top: 100px;
+  right: -250px;
+}
+
+.prices-hero__content h1 {
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -2.5px;
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.prices-hero__content p {
+  font-size: clamp(16px, 1.8vw, 19px);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   ONGOING SERVICE
+   ============================================================ */
+.prices-ongoing__area {
+  padding: 80px 0 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.prices-label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+
+.prices-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.prices-amount__number {
+  font-size: clamp(56px, 7vw, 84px);
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -3px;
+  line-height: 1;
+}
+
+.prices-amount__unit {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.prices-billing {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.prices-includes-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.prices-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.prices-feature-list li {
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.6;
+  padding-left: 28px;
+  position: relative;
+}
+
+.prices-feature-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+/* ============================================================
+   ONBOARDING PACKAGES (Cards)
+   ============================================================ */
+.prices-packages__area {
+  padding: 100px 0;
+  background: var(--color-dark);
+}
+
+.prices-packages__heading {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.prices-packages__heading h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -2px;
+}
+
+.prices-pkg__card {
+  background: var(--color-dark-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-card);
+  padding: 48px 40px;
+  height: 100%;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.prices-pkg__card:hover {
+  border-color: rgba(0, 195, 255, 0.3);
+  transform: translateY(-8px);
+  background: var(--color-dark-card2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.prices-pkg__price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 24px 0 16px;
+}
+
+.prices-pkg__amount {
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.prices-pkg__suffix {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.prices-pkg__desc {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  flex-grow: 0;
+}
+
+.prices-pkg__btn-wrap {
+  margin-top: auto;
+  padding-top: 40px;
+}
+
+/* Buttons (Premium) */
+.btn {
+  display: inline-block;
+  padding: 16px 36px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: var(--transition);
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.btn--blue {
+  background: var(--color-blue);
+  color: var(--color-black) !important;
+}
+
+.btn--blue:hover {
+  background: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-white) !important;
+}
+
+.btn--outline:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue) !important;
+  background: rgba(0, 195, 255, 0.05);
+}
+
+.prices-pkg__btn {
+  width: 100%;
+  background: var(--color-white);
+  color: var(--color-black) !important;
+}
+
+.prices-pkg__btn:hover {
+  background: var(--color-blue);
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   CTA STRIP
+   ============================================================ */
+.prices-cta__area {
+  padding: 120px 0;
+  background: var(--color-black);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.prices-cta__blob {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 195, 255, 0.1) 0%, transparent 70%);
+  filter: blur(80px);
+  bottom: -200px;
+  right: -100px;
+  z-index: 0;
+}
+
+.prices-cta__content h2 {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.prices-cta__content h2 span {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.prices-cta__content p {
+  color: var(--color-text-muted);
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* ============================================================
+   FOOTER (Pricing Variant)
+   ============================================================ */
+.prices-footer-box {
+  background: var(--color-blue);
+  padding: 80px 0;
+  margin-top: 60px;
+  border-radius: 40px 40px 0 0;
+}
+
+.prices-footer-box h2 {
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 800;
+  color: var(--color-black);
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.prices-footer-box .footer-questions {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 8px;
+}
+
+.prices-footer-box .footer-contact-link {
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 800;
+  color: var(--color-black);
+  transition: var(--transition);
+}
+
+.prices-footer-box .footer-contact-link:hover {
+  opacity: 0.7;
+}
+
+.biz-footer__bottombar {
+  padding: 60px 0;
+  background: var(--color-black);
+}
+
+.biz-footer__links a {
+  color: var(--color-text-muted);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.biz-footer__links a:hover {
+  color: var(--color-white);
+}
+
+.biz-footer__legal {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 991.98px) {
+  .header__menu { display: none; }
+  .menu__open { display: block; }
+  .prices-hero__area { padding: 140px 0 60px; }
+  .prices-ongoing__area { padding: 60px 0; }
+  .prices-amount { margin-top: 40px; }
+  .prices-ongoing__right { border-left: none; padding-left: 0; margin-top: 40px; }
+  .prices-pkg__card { padding: 36px 28px; }
+}
+
+@media (max-width: 767.98px) {
+  .prices-hero__area h1 { font-size: 40px; }
+  .prices-footer-box { border-radius: 30px 30px 0 0; padding: 60px 0; }
+  .prices-footer-box .btn { width: 100%; margin-top: 32px; }
+}
