@@ -1,0 +1,17 @@
+<!-- Tutorial Step 1 - Choose wallet type -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280">
+  <rect width="360" height="280" rx="10" fill="#1a1a1a"/>
+  <text x="20" y="35" font-family="Arial" font-size="12" fill="#888">Choose your wallet type</text>
+  <!-- Options -->
+  <rect x="20" y="48" width="320" height="44" rx="6" fill="#00e87b"/>
+  <text x="40" y="75" font-family="Arial" font-size="14" font-weight="bold" fill="#000">Simple Inheritance</text>
+  
+  <rect x="20" y="104" width="320" height="44" rx="6" fill="#222"/>
+  <text x="40" y="131" font-family="Arial" font-size="14" fill="#fff">Expanding Multisig</text>
+  
+  <rect x="20" y="160" width="320" height="44" rx="6" fill="#222"/>
+  <text x="40" y="187" font-family="Arial" font-size="14" fill="#fff">Build your own</text>
+  
+  <text x="20" y="235" font-family="Arial" font-size="11" fill="#888">Simple inheritance: 1 primary key + 1 recovery key</text>
+  <text x="20" y="255" font-family="Arial" font-size="11" fill="#888">that becomes active after a timelock period.</text>
+</svg>

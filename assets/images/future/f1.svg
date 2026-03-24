@@ -1,0 +1,28 @@
+<!-- Future slide 1 - Wallet recovery screen mockup -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <rect width="480" height="360" rx="12" fill="#1a1a1a"/>
+  <rect x="20" y="20" width="440" height="320" rx="8" fill="#111"/>
+  <!-- Sidebar -->
+  <rect x="20" y="20" width="100" height="320" rx="8" fill="#0d0d0d"/>
+  <circle cx="70" cy="60" r="20" fill="#2a2a2a"/>
+  <rect x="50" y="100" width="40" height="8" rx="4" fill="#333"/>
+  <rect x="50" y="120" width="40" height="8" rx="4" fill="#333"/>
+  <rect x="50" y="140" width="40" height="8" rx="4" fill="#333"/>
+  <rect x="50" y="160" width="40" height="8" rx="4" fill="#333"/>
+  <!-- Main area -->
+  <text x="145" y="55" font-family="Arial" font-size="13" fill="#888">Recovery Flow</text>
+  <rect x="130" y="70" width="310" height="50" rx="8" fill="#1e3a2a"/>
+  <text x="150" y="100" font-family="Arial" font-size="14" fill="#00e87b">✓  Recovery path available in 5 months, 13 days</text>
+  <!-- Keys section -->
+  <text x="145" y="148" font-family="Arial" font-size="12" fill="#888">Primary keys</text>
+  <rect x="130" y="158" width="310" height="36" rx="6" fill="#222"/>
+  <circle cx="152" cy="176" r="8" fill="#00e87b"/>
+  <text x="168" y="181" font-family="Arial" font-size="12" fill="#fff">Ledger Nano X — imported</text>
+  <text x="145" y="218" font-family="Arial" font-size="12" fill="#888">Recovery keys</text>
+  <rect x="130" y="228" width="310" height="36" rx="6" fill="#222"/>
+  <circle cx="152" cy="246" r="8" fill="#666"/>
+  <text x="168" y="251" font-family="Arial" font-size="12" fill="#888">Inheritance key — 180 days</text>
+  <!-- Button -->
+  <rect x="130" y="290" width="120" height="36" rx="6" fill="#00e87b"/>
+  <text x="190" y="314" font-family="Arial" font-size="13" font-weight="bold" fill="#000" text-anchor="middle">Create Wallet</text>
+</svg>

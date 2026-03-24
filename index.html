@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Liana – A secure Bitcoin wallet designed for peace of mind. Protect your Bitcoin with time-based recovery paths and multi-signature security."
+    />
+    <title>
+      Liana Wallet - A secure Bitcoin wallet designed for peace of mind
+    </title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Scroll to Top -->
+    <a class="scroll-top" id="scrollTop"
+      ><i class="fas fa-angle-double-up"></i
+    ></a>
+
+    <!-- Offcanvas Section -->
+    <div class="offcanvas__area" id="offcanvasArea">
+      <div class="offcanvas__topbar">
+        <a href="/"
+          ><img
+            src="assets/images/logo/logo-white.svg"
+            alt="Liana Wallet logo"
+            height="36"
+        /></a>
+        <span class="menu__close" id="menuClose"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+      </div>
+      <div class="offcanvas__main">
+        <div class="offcanvas__menu">
+          <ul>
+            <li><a href="#business">Liana Business</a></li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalToggle"
+                >Download Liana</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas__overlay" id="offcanvasOverlay"></div>
+
+    <!-- Header -->
+    <header class="header__area" id="mainHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header__main">
+              <div class="header__logo">
+                <a href="/"
+                  ><img
+                    src="assets/images/logo/logo-white.svg"
+                    alt="Liana Wallet logo"
+                    height="36"
+                /></a>
+              </div>
+              <div class="header__menu">
+                <ul>
+                  <li><a href="#business">Liana Business</a></li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModalToggle"
+                      >Download Liana</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <span class="menu__open" id="menuOpen"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero__area">
+        <div class="hero__bg"></div>
+        <div class="container-fluid p-0">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-6">
+              <div class="hero__content">
+                <h1>A secure Bitcoin wallet designed for peace of mind</h1>
+                <p>
+                  Whether you are saving for the long term, protecting family
+                  funds, or securing business assets, Liana gives you full
+                  control, no matter what.
+                </p>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalToggle"
+                  class="btn btn--lg btn--white"
+                >
+                  Download Liana <i class="fa-solid fa-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero__thumb">
+                <!-- Main Wallet Image -->
+                <img
+                  src="assets/images/hero-thumb.png"
+                  alt="Liana wallet home screen screenshot"
+                  class="hero__main-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facility Section -->
+      <section class="facility__area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="facility__title">
+                <h2>What makes Liana different</h2>
+                <p>
+                  Liana is built for people who want to be resilient to failure,
+                  loss, or change.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row g-5">
+            <div class="col-xl-3 col-md-6">
+              <div class="facility__single">
+                <img
+                  src="assets/images/facility/f1.svg"
+                  loading="lazy"
+                  alt="Bitcoin logo"
+                />
+                <h6>Always recoverable</h6>
+                <p>
+                  Even if your device breaks or a company disappears, your
+                  bitcoin stays safe.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="facility__single">
+                <img
+                  src="assets/images/facility/f2.svg"
+                  loading="lazy"
+                  alt="Clock"
+                />
+                <h6>Time-based backups</h6>
+                <p>
+                  Set recovery rules so your future self (or someone you
+                  designate) can regain access when needed.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="facility__single">
+                <img
+                  src="assets/images/facility/f3.svg"
+                  loading="lazy"
+                  alt="Handshake"
+                />
+                <h6>No single point of failure</h6>
+                <p>
+                  Define who can act, who can recover, and when. You are never
+                  dependent on one person or one device.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="facility__single">
+                <img
+                  src="assets/images/facility/f4.svg"
+                  loading="lazy"
+                  alt="Open lock"
+                />
+                <h6>Privacy-first and open-source</h6>
+                <p>
+                  No tracking, no lock-in, no hidden code. Liana is fully
+                  transparent and Bitcoin-only.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Future Section -->
+      <section class="future__area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="future__title">
+                <h2>Where Liana really comes into its own</h2>
+                <p>
+                  Liana isn't just for storing bitcoin. It's for protecting your
+                  future, whatever happens.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="future__wrap">
+                <div class="swiper future__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                          <div class="future__img">
+                            <img
+                              src="assets/images/future/f1.svg"
+                              loading="lazy"
+                              alt="Recovery flow representation"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="future__content">
+                            <h5>Planning for the future</h5>
+                            <p>
+                              Set up time-based recovery so your family or
+                              trusted contact can access funds if something
+                              happens to you. Perfect for inheritance and
+                              long-term savings.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                          <div class="future__img">
+                            <img
+                              src="assets/images/future/f2.svg"
+                              loading="lazy"
+                              alt="Recovery transaction"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="future__content">
+                            <h5>Recovering from the unexpected:</h5>
+                            <p>
+                              Lost a device, a key, or even access to a company
+                              account? Liana's built-in disaster recovery gets
+                              you back safely: no support tickets, no stress, no
+                              loss.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                          <div class="future__img">
+                            <img
+                              src="assets/images/future/f3.svg"
+                              loading="lazy"
+                              alt="Shared accounts invitation screen"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="future__content">
+                            <h5>Running shared accounts:</h5>
+                            <p>
+                              Give others controlled access without giving up
+                              control. Define who can spend, approve, or
+                              recover, all on your terms. Ideal for families,
+                              small or large teams, and business treasuries.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tutorial Section -->
+      <section class="tutorial__area">
+        <div class="tutorial__sp-bg"></div>
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tutorial__title">
+                <h2>Set it up once, stay protected forever</h2>
+                <p>You don't need to be a technical expert.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="tutorial__single">
+                <span class="tutorial__step">01</span>
+                <h6>Choose how your wallet behaves</h6>
+                <p>
+                  Pick from simple single-key, time-locked backups, or
+                  multi-signature policies to match your needs.
+                </p>
+                <img
+                  src="assets/images/tutorial/t1.svg"
+                  loading="lazy"
+                  alt="Liana wallet templates screen"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="tutorial__single">
+                <span class="tutorial__step">02</span>
+                <h6>Add trusted people or backup keys</h6>
+                <p>
+                  Assign signing keys to family members, colleagues, or hardware
+                  devices for extra layers of security.
+                </p>
+                <img
+                  src="assets/images/tutorial/t2.svg"
+                  loading="lazy"
+                  alt="Primary and inheritance key selection"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="tutorial__single">
+                <span class="tutorial__step">03</span>
+                <h6>Relax. Liana enforces your policy automatically</h6>
+                <p>
+                  Your rules are enforced on-chain, not by our servers. No
+                  maintenance, no trust required.
+                </p>
+                <img
+                  src="assets/images/tutorial/t3.svg"
+                  loading="lazy"
+                  alt="Broadcast success message"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tutorial__info">
+                <p>
+                  No account required. No hidden dependencies. Just security
+                  that lasts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section class="service__area" id="business">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="service__topbar">
+                <div class="service__title">
+                  <h2>Built for individuals and organisations</h2>
+                  <p>Liana is used by:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="service__single">
+                <div class="service__img">
+                  <img
+                    src="assets/images/service/s1.svg"
+                    loading="lazy"
+                    alt="A woman enjoying a coffee"
+                  />
+                  <div class="service__overlay">
+                    <h5>Individuals protecting long-term savings</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service__single">
+                <div class="service__img">
+                  <img
+                    src="assets/images/service/s2.svg"
+                    loading="lazy"
+                    alt="A happy family"
+                  />
+                  <div class="service__overlay">
+                    <h5>Families managing shared access</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service__single">
+                <div class="service__img">
+                  <img
+                    src="assets/images/service/s3.svg"
+                    loading="lazy"
+                    alt="Business people looking at a tablet"
+                  />
+                  <div class="service__overlay">
+                    <h5>Teams coordinating business treasuries</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-lg-12">
+              <div class="service__info">
+                <p>
+                  Running a business? Learn how Liana helps CFOs, compliance,
+                  and security teams hold bitcoin with clarity.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="service__btn">
+                <a href="#business" class="btn btn--white"
+                  >Go to Liana Business</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Control Section -->
+      <section class="control__area">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="control__content">
+                <h2>Why control matters</h2>
+                <ul>
+                  <li>If you lose your keys, your bitcoin is gone.</li>
+                  <li>If your custodian fails, you might never get it back.</li>
+                  <li>
+                    If you rely on a company that disappears, you are stuck.
+                  </li>
+                  <li>
+                    With Liana, you stay in control, today, tomorrow, and for
+                    the long term. Even if we were to disappear.
+                  </li>
+                </ul>
+                <p>
+                  <a
+                    href="javascript:void(0)"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalToggle"
+                    >Download Liana</a
+                  >
+                  for free &nbsp;·&nbsp; Got questions?
+                  <a href="#footer">Get in touch</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <div class="control__thumb">
+                <img
+                  src="assets/images/control-thumb.svg"
+                  loading="lazy"
+                  alt="Security shield with bitcoin"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq__area">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <div class="faq__title">
+                <h2>Frequently asked questions</h2>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="faq__wrap">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Can I use Liana without advanced knowledge?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Yes. Liana is designed for real-world users. The setup
+                        process is guided, interfaces are intuitive, and every
+                        step is explained in plain language. You don't need to
+                        understand the Bitcoin protocol: you just need to follow
+                        clear, structured steps that map to how you already
+                        think about security and ownership.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        What happens if I lose a signing device?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Liana is built with recovery in mind. You can configure
+                        fallback keys and time-locked recovery paths so that if
+                        a device is lost, access can safely be regained without
+                        compromising security. Your bitcoin remains under your
+                        control. Recovery doesn't depend on Wizardsardine or any
+                        third party.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Can I set up backups for my family?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Yes. Liana allows you to define policies that include
+                        family members or trusted people as part of your
+                        recovery plan. For example, you can set a rule that
+                        after a delay, another keyholder regains access if you
+                        are unavailable. Perfect for trustless inheritance
+                        planning.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        What's different about Liana vs a standard wallet?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Most wallets either rely on trusted co-signers, or are
+                        for advanced users. Liana is the first wallet built with
+                        loss protection in mind. It allows setting up recovery
+                        keys that are timelocked, meaning they can only access
+                        your funds if the regular keys are lost. Liana uses
+                        Miniscript, a new standard and secure way to build
+                        bitcoin wallets. It is open-source so you don't have to
+                        trust us! Finally, everything is enforced on-chain, not
+                        by our company or servers.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        Is Liana secure enough for businesses?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFive"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Yes. Liana is open-source, Bitcoin-native infrastructure
+                        designed specifically for organisations that answer to
+                        boards, auditors, and regulators. It provides verifiable
+                        control, auditable trails, and programmable security
+                        policies. It's already trusted by businesses and
+                        security professionals who can't afford uncertainty or
+                        downtime.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer__area" id="footer">
+      <div class="footer__topbar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-7">
+              <div class="footer__topbar__content">
+                <h2>
+                  Ready to secure your bitcoin with clarity, not compromise?
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 text-md-end mt-4 mt-md-0">
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalToggle"
+                class="btn btn--lg btn--black hover--white"
+              >
+                Download Liana
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer__contact__content">
+                <h5>Have specific questions?</h5>
+                <a href="mailto:hello@lianawallet.com">hello@lianawallet.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottombar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <a href="/"
+                ><img
+                  src="assets/images/logo/logo-green.svg"
+                  alt="Liana logo"
+                  height="32"
+              /></a>
+            </div>
+            <div class="col-lg-4 text-center">
+              <ul class="footer__bottombar__links">
+                <li><a href="#business">Liana Business</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <div class="footer__social">
+                <a
+                  href="https://github.com/wizardsardine/liana"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://twitter.com/LianaWallet"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Twitter / X"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-12">
+              <small class="footer__legal">
+                Wizardsardine LDA, Canada de Belem, Terra-Cha, Portugal.
+                Registration PT516022474.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Download Modal - OS Selection -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal__close">
+            <button
+              type="button"
+              class="close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="download__wrap">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="download__title">
+                    <h4>Download Liana</h4>
+                    <p>Latest version 13.1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-4 justify-content-center">
+                <div class="col-lg-12">
+                  <div class="download__os">
+                    <h6>Please choose your operating system</h6>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <a
+                    href="javascript:void(0)"
+                    class="download__card"
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >
+                    <div class="download__icon download__icon--linux">
+                      <i class="fa-brands fa-linux"></i>
+                    </div>
+                    <div class="download__version">
+                      <h4>Linux</h4>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <a
+                    href="https://github.com/wizardsardine/liana/releases/download/v13.1/Liana-13.1-macos.zip"
+                    class="download__card"
+                  >
+                    <div class="download__icon download__icon--apple">
+                      <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="download__version">
+                      <h4>MacOS</h4>
+                      <p>Liana.zip</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <a
+                    href="https://github.com/wizardsardine/liana/releases/download/v13.1/liana-13.1.exe"
+                    class="download__card"
+                  >
+                    <div class="download__icon download__icon--windows">
+                      <i class="fa-brands fa-windows"></i>
+                    </div>
+                    <div class="download__version">
+                      <h4>Windows</h4>
+                      <p>Liana.exe</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-12">
+                  <div class="download__info">
+                    <p>
+                      More binaries along with GPG signatures are available on
+                      <a
+                        href="https://github.com/wizardsardine/liana/releases"
+                        target="_blank"
+                        rel="noreferrer"
+                        >our GitHub</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download Modal - Linux -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal__close">
+            <button
+              type="button"
+              class="close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="download__wrap">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="download__title">
+                    <h4>Download Liana for Linux</h4>
+                    <p>Latest version 13.1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-4 justify-content-center">
+                <div class="col-lg-12">
+                  <div class="download__os">
+                    <h6>Please choose your Linux version</h6>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <a
+                    href="https://github.com/wizardsardine/liana/releases/download/v13.1/liana-13.1-1_amd64.deb"
+                    class="download__card"
+                  >
+                    <div class="download__icon download__icon--linux">
+                      <i class="fa-brands fa-linux"></i>
+                    </div>
+                    <div class="download__version">
+                      <h4>Debian-based</h4>
+                      <p>(Ubuntu, etc...)</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <a
+                    href="https://aur.archlinux.org/packages/liana-bin"
+                    class="download__card"
+                  >
+                    <div class="download__icon download__icon--linux">
+                      <i class="fa-brands fa-linux"></i>
+                    </div>
+                    <div class="download__version">
+                      <h4>Arch-based</h4>
+                      <p>(Manjaro, etc...)</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <a
+                    href="https://github.com/wizardsardine/liana/releases/download/v13.1/liana-13.1-x86_64-linux-gnu.tar.gz"
+                    class="download__card"
+                  >
+                    <div class="download__icon download__icon--linux">
+                      <i class="fa-brands fa-linux"></i>
+                    </div>
+                    <div class="download__version">
+                      <h4>Other distributions</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn--base"
+              data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal"
+            >
+              <i class="fa-solid fa-arrow-left me-2"></i> Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

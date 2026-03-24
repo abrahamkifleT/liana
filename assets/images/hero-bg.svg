@@ -1,0 +1,17 @@
+<!-- Hero background - dark with green radial glow top-right -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" width="1440" height="800">
+  <defs>
+    <radialGradient id="heroGlow" cx="80%" cy="15%" r="45%">
+      <stop offset="0%" style="stop-color:#00e87b;stop-opacity:0.4" />
+      <stop offset="40%" style="stop-color:#00e87b;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="heroGlow2" cx="90%" cy="5%" r="25%">
+      <stop offset="0%" style="stop-color:#00e87b;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="800" fill="#000000"/>
+  <rect width="1440" height="800" fill="url(#heroGlow)"/>
+  <rect width="1440" height="800" fill="url(#heroGlow2)"/>
+</svg>

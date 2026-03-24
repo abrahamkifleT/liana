@@ -1,0 +1,29 @@
+<!-- Future slide 2 - Recovery transaction mockup -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <rect width="480" height="360" rx="12" fill="#1a1a1a"/>
+  <rect x="20" y="20" width="440" height="320" rx="8" fill="#111"/>
+  <!-- Sidebar -->
+  <rect x="20" y="20" width="100" height="320" rx="8" fill="#0d0d0d"/>
+  <circle cx="70" cy="60" r="20" fill="#2a2a2a"/>
+  <rect x="50" y="100" width="40" height="8" rx="4" fill="#333"/>
+  <rect x="50" y="120" width="40" height="8" rx="4" fill="#333"/>
+  <rect x="50" y="140" width="40" height="8" rx="4" fill="#00e87b" opacity="0.6"/>
+  <rect x="50" y="160" width="40" height="8" rx="4" fill="#333"/>
+  <!-- Main area header -->
+  <text x="145" y="55" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">Recovery Transaction</text>
+  <!-- TX details -->
+  <text x="145" y="90" font-family="Arial" font-size="11" fill="#888">Amount to recover</text>
+  <text x="145" y="112" font-family="Arial" font-size="22" font-weight="bold" fill="#fff">0.01 616 550 <tspan fill="#888" font-size="16">BTC</tspan></text>
+  <text x="145" y="135" font-family="Arial" font-size="11" fill="#00e87b">+0.01 421 337 BTC unconfirmed</text>
+  <!-- Divider -->
+  <line x1="130" y1="155" x2="440" y2="155" stroke="#333" stroke-width="1"/>
+  <!-- Status -->
+  <rect x="130" y="168" width="310" height="60" rx="8" fill="#1e3a2a"/>
+  <text x="285" y="192" font-family="Arial" font-size="12" fill="#00e87b" text-anchor="middle">Recovery path unlocked</text>
+  <text x="285" y="216" font-family="Arial" font-size="11" fill="#888" text-anchor="middle">Your timelock period has expired. You can now</text>
+  <!-- Button row -->
+  <rect x="130" y="248" width="148" height="36" rx="6" fill="#00e87b"/>
+  <text x="204" y="271" font-family="Arial" font-size="12" font-weight="bold" fill="#000" text-anchor="middle">Broadcast Now</text>
+  <rect x="294" y="248" width="146" height="36" rx="6" fill="#222"/>
+  <text x="367" y="271" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">Save PSBT</text>
+</svg>

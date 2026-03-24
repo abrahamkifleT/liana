@@ -1,0 +1,40 @@
+<!-- Future slide 3 - Invitation / shared accounts -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <rect width="480" height="360" rx="12" fill="#1a1a1a"/>
+  <rect x="20" y="20" width="440" height="320" rx="8" fill="#111"/>
+  <!-- Sidebar -->
+  <rect x="20" y="20" width="100" height="320" rx="8" fill="#0d0d0d"/>
+  <circle cx="70" cy="60" r="20" fill="#2a2a2a"/>
+  <rect x="50" y="100" width="40" height="8" rx="4" fill="#333"/>
+  <rect x="50" y="120" width="40" height="8" rx="4" fill="#333"/>
+  <rect x="50" y="140" width="40" height="8" rx="4" fill="#333"/>
+  <rect x="50" y="160" width="40" height="8" rx="4" fill="#333"/>
+  <!-- Main area -->
+  <text x="145" y="52" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">Shared Wallet Members</text>
+  <!-- Member list -->
+  <rect x="130" y="64" width="310" height="46" rx="6" fill="#222"/>
+  <circle cx="155" cy="87" r="12" fill="#00e87b"/>
+  <text x="175" y="84" font-family="Arial" font-size="12" fill="#fff">Alice (Primary Signer)</text>
+  <text x="175" y="100" font-family="Arial" font-size="10" fill="#888">Ledger Nano X</text>
+  <text x="415" y="92" font-family="Arial" font-size="10" fill="#00e87b" text-anchor="end">Owner</text>
+  
+  <rect x="130" y="120" width="310" height="46" rx="6" fill="#222"/>
+  <circle cx="155" cy="143" r="12" fill="#888"/>
+  <text x="175" y="140" font-family="Arial" font-size="12" fill="#fff">Bob (Co-signer)</text>
+  <text x="175" y="156" font-family="Arial" font-size="10" fill="#888">Trezor One</text>
+  <text x="415" y="148" font-family="Arial" font-size="10" fill="#888" text-anchor="end">Member</text>
+  
+  <rect x="130" y="176" width="310" height="46" rx="6" fill="#222"/>
+  <circle cx="155" cy="199" r="12" fill="#555"/>
+  <text x="175" y="196" font-family="Arial" font-size="12" fill="#fff">Recovery Key (Timelock)</text>
+  <text x="175" y="212" font-family="Arial" font-size="10" fill="#888">180 days — Inheritance path</text>
+  <text x="415" y="204" font-family="Arial" font-size="10" fill="#888" text-anchor="end">Recovery</text>
+  
+  <!-- Invite button -->
+  <rect x="130" y="240" width="310" height="36" rx="6" fill="#00e87b" opacity="0.15" stroke="#00e87b" stroke-width="1"/>
+  <text x="285" y="264" font-family="Arial" font-size="12" fill="#00e87b" text-anchor="middle">+ Invite Another Signer</text>
+  
+  <!-- Policy summary -->
+  <rect x="130" y="290" width="310" height="30" rx="6" fill="#1a1a1a"/>
+  <text x="285" y="310" font-family="Arial" font-size="10" fill="#888" text-anchor="middle">Policy: 2-of-3 multisig with 180-day recovery path</text>
+</svg>

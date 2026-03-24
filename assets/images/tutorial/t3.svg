@@ -1,0 +1,17 @@
+<!-- Tutorial Step 3 - Broadcast success -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280">
+  <rect width="360" height="280" rx="10" fill="#1a1a1a"/>
+  <!-- Center success message -->
+  <circle cx="180" cy="100" r="40" fill="#00e87b" opacity="0.15"/>
+  <circle cx="180" cy="100" r="30" fill="#00e87b" opacity="0.3"/>
+  <circle cx="180" cy="100" r="22" fill="#00e87b"/>
+  <!-- Checkmark -->
+  <path d="M168 100 L177 110 L194 90" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <text x="180" y="162" font-family="Arial" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">Transaction is broadcast</text>
+  <text x="180" y="186" font-family="Arial" font-size="12" fill="#888" text-anchor="middle">Your wallet policy is now active on the</text>
+  <text x="180" y="204" font-family="Arial" font-size="12" fill="#888" text-anchor="middle">Bitcoin blockchain.</text>
+  
+  <rect x="80" y="228" width="200" height="36" rx="6" fill="#00e87b"/>
+  <text x="180" y="252" font-family="Arial" font-size="13" font-weight="bold" fill="#000" text-anchor="middle">Go to Wallet</text>
+</svg>
